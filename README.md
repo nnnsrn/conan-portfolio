@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# conan-portfolio
 
-TODO: Document your project here
+Personal portfolio website built with Vite, React, and Tailwind CSS.
