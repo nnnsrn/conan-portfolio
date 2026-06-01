@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Detective Conan inspired portfolio — minimalist, noir touches, red bowtie accent */
+
+@layer base {
+  :root {
+    /* Light, paper-like base reminiscent of case files */
+    --background: 40 30% 98%;
+    --foreground: 222 30% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 30% 12%;
+
+    /* Conan navy — his iconic suit */
+    --primary: 222 47% 18%;
+    --primary-foreground: 40 30% 98%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 30% 12%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent colors: gold used for highlights, bowtie remains red */
+    --accent: 45 90% 58%; /* warm gold highlight */
+    --accent-foreground: 0 0% 100%;
+    --bowtie: 354 78% 52%; /* preserve red for bowtie */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 354 78% 52%;
+
+    --radius: 0.75rem;
+
+    /* Detective theme tokens */
+    --ink: 222 47% 11%;
+    --paper: 40 30% 98%;
+    --magnifier: 200 50% 60%;
+
+    --gradient-hero: radial-gradient(ellipse at top right, hsl(45 90% 58% / 0.06), transparent 40%),
+             radial-gradient(ellipse at bottom left, hsl(222 47% 8% / 0.06), transparent 45%);
+    --gradient-accent: linear-gradient(135deg, hsl(354 78% 52%), hsl(354 78% 42%));
+    --gradient-ink: linear-gradient(135deg, hsl(222 47% 18%), hsl(222 47% 11%));
+
+    --shadow-soft: 0 4px 20px -8px hsl(222 47% 18% / 0.12);
+    --shadow-card: 0 8px 30px -12px hsl(222 47% 18% / 0.18);
+    --shadow-accent: 0 8px 30px -8px hsl(354 78% 52% / 0.35);
+
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Deep navy background and light foreground for a noir look */
+    --background: 220 24% 6%; /* very dark navy */
+    --foreground: 210 18% 92%;
+    --card: 222 30% 10%;
+    --card-foreground: 210 18% 92%;
+    --popover: 222 30% 10%;
+    --popover-foreground: 210 18% 92%;
+    --primary: 210 18% 92%;
+    --primary-foreground: 222 30% 10%;
+    --secondary: 222 24% 12%;
+    --secondary-foreground: 210 18% 92%;
+    --muted: 222 24% 12%;
+    --muted-foreground: 210 12% 70%;
+    /* gold accent in dark mode */
+    --accent: 45 90% 58%;
+    --accent-foreground: 0 0% 100%;
+    /* keep bowtie red */
+    --bowtie: 354 78% 52%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 210 18% 92%;
+    --border: 222 30% 14%;
+    --input: 222 30% 14%;
+    --ring: 45 90% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv11";
+  }
+}
+
+@layer utilities {
+  .bg-hero {
+    background-image: var(--gradient-hero);
+  }
+  .bg-gradient-accent {
+    background-image: var(--gradient-accent);
+  }
+  .bg-gradient-ink {
+    background-image: var(--gradient-ink);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+  .transition-smooth {
+    transition: all 0.4s var(--transition-smooth);
+  }
+  .text-accent-ink {
+    color: hsl(var(--accent));
+  }
+  .grid-pattern {
+    background-image:
+      linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at center, black 28%, transparent 72%);
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s var(--transition-smooth), transform 0.7s var(--transition-smooth);
+  }
+  .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
