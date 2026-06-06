@@ -10,7 +10,7 @@ export const Projects = () => {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 reveal">
           <div className="max-w-2xl">
             <div className="font-mono text-xs uppercase tracking-widest text-accent mb-4">
-              02 — Projects
+              02 — Cases
             </div>
             <h2 className="font-display text-4xl lg:text-5xl font-bold tracking-tight">
               Selected projects<span className="text-accent">.</span>

@@ -8,7 +8,6 @@ const links = [
   { href: "#languages", label: "Languages" },
   { href: "#video-editing", label: "Reels" },
   { href: "#certifications", label: "Certifications" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
