@@ -58,7 +58,7 @@ export const Certifications = () => {
       <div className="container mx-auto">
         <div className="max-w-2xl reveal">
           <div className="font-mono text-xs uppercase tracking-widest text-accent mb-4">
-            06 — The Credentials
+            05 — The Credentials
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold tracking-tight">
             Certifications<span className="text-accent">.</span>

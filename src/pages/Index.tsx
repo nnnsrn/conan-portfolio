@@ -22,8 +22,8 @@ const Index = () => {
         <Projects />
         <Experience />
         <Languages />
-        <VideoEditing />
         <Certifications />
+        <VideoEditing />
         <Contact />
       </main>
       <Footer />

@@ -24,7 +24,7 @@ export const VideoEditing = () => {
       <div className="container mx-auto">
         <div className="max-w-2xl reveal">
           <div className="font-mono text-xs uppercase tracking-widest text-accent mb-4">
-            05 — Trying new things
+            06 — Trying new things
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold tracking-tight">
             Video editing<span className="text-accent">.</span>
