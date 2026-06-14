@@ -2,6 +2,13 @@ import { ArrowUpRight, Award, FileText } from "lucide-react";
 
 const certifications = [
   {
+    title: "Fundamental Data Processing",
+    issuer: "Dicoding Indonesia",
+    date: "2026",
+    summary: "This certification validates my skills in ETL processes and data manipulation.",
+    pdf: "/certifications/dicoding_data processing.pdf",
+  },
+  {
     title: "Building Gen AI Solutions on Microsoft Azure",
     issuer: "Dicoding Indonesia",
     date: "2026",
