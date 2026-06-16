@@ -54,6 +54,39 @@ outcome:
 
 {
 id: "002",
+title: "ChemicAI — AI Agent for Novel Chemical Discovery",
+image: "/projects/chemicai-discovery-platform.webp",
+reportImage: "/projects/report-004.webp",
+projectLink: "https://chemic-ai.vercel.app/",
+githubLink: "https://github.com/abel1494/ChemicAI_API_Capstone",
+summary:
+"Designed an AI-powered platform for screening and optimizing candidate molecules, reducing traditional discovery timelines.",
+tech: ["Python", "Deep Learning", "PubChem", "SwissADME"],
+status: "Featured",
+category: "AI / ML",
+report: {
+overview:
+"AI-driven system for novel chemical discovery and molecular optimization.",
+uiDirection:
+"Focused on accelerating research workflows through computational screening.",
+designNotes: [
+"Integrated molecular property prediction models.",
+"Connected PubChem and SwissADME validation pipelines.",
+"Built an end-to-end discovery workflow for researchers.",
+],
+features: [
+"Molecule screening",
+"Property prediction",
+"Chemical validation",
+"Research automation",
+],
+outcome:
+"Reduced early-stage discovery timelines from years to weeks through computational screening.",
+},
+},
+
+{
+id: "003",
 title: "Gold Analysis Platform",
 image: "/projects/gold-analysis-platform.webp",
 reportImage: "/projects/report-002.webp",
@@ -85,7 +118,7 @@ outcome:
 },
 
 {
-id: "003",
+id: "004",
 title: "Sentra Political Fact-Checking Chatbot",
 image: "/projects/sentra-fact-checking-chatbot.webp",
 reportImage: "/projects/report-003.webp",
@@ -116,38 +149,6 @@ outcome:
 },
 },
 
-{
-id: "004",
-title: "ChemicAI — AI Agent for Novel Chemical Discovery",
-image: "/projects/chemicai-discovery-platform.webp",
-reportImage: "/projects/report-004.webp",
-projectLink: "https://chemic-ai.vercel.app/",
-githubLink: "https://github.com/abel1494/ChemicAI_API_Capstone",
-summary:
-"Designed an AI-powered platform for screening and optimizing candidate molecules, reducing traditional discovery timelines.",
-tech: ["Python", "Deep Learning", "PubChem", "SwissADME"],
-status: "Featured",
-category: "AI / ML",
-report: {
-overview:
-"AI-driven system for novel chemical discovery and molecular optimization.",
-uiDirection:
-"Focused on accelerating research workflows through computational screening.",
-designNotes: [
-"Integrated molecular property prediction models.",
-"Connected PubChem and SwissADME validation pipelines.",
-"Built an end-to-end discovery workflow for researchers.",
-],
-features: [
-"Molecule screening",
-"Property prediction",
-"Chemical validation",
-"Research automation",
-],
-outcome:
-"Reduced early-stage discovery timelines from years to weeks through computational screening.",
-},
-},
 
 {
 id: "005",
@@ -242,6 +243,38 @@ features: [
 ],
 outcome:
 "Maintained stable gameplay performance while supporting multiple levels and custom mechanics.",
+},
+},
+
+{
+id: "008",
+title: "Nina List",
+image: "/projects/nina-list.webp",
+reportImage: "/projects/report-008.webp",
+projectLink: "https://nina-list.vercel.app/",
+summary:
+"Developed a web-based application for managing and sharing curated lists, with user authentication and real-time updates.",
+tech: ["React", "Next.js", "Supabase", "TypeScript", "PostgreSQL", "Jikan API"],
+status: "On Going",
+category: "Web Development",
+report: {
+overview:
+"Web-based application for managing and sharing curated lists.",
+uiDirection:
+"Focused on intuitive user interface and seamless real-time collaboration.",
+designNotes: [
+"Developed a full-stack media tracking platform for anime, manga, manhwa, and manhua enthusiasts.",
+"Designed an analytics dashboard to visualize user progress, ratings, and collection statistics.",
+"Implemented secure admin authentication and cloud-based data management using Supabase.",
+],
+features: [
+"Personal Library Management",
+"Statistics Dashboard",
+"Community Suggestions System",
+"MyAnimeList Search Integration",
+],
+outcome:
+"Built a centralized platform that enables users to organize, track, and analyze their media consumption while discovering new titles through external API integration. The project strengthened full-stack development, database design, authentication, API integration, and deployment skills.",
 },
 },
 ];
