@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NLogo } from "./NLogo";
 
 const links = [
-  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Cases" },
   { href: "#experience", label: "Experience" },
   { href: "#languages", label: "Languages" },

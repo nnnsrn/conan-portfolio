@@ -30,10 +30,7 @@ export const Hero = () => {
               <span className="text-accent font-serif">Nina</span>
               <Bowtie className="absolute -top-3 -right-8 h-5 w-7 animate-float" />
             </span>
-            <br />
-            <span className="text-foreground/90">solving problems,</span>
-            <br />
-            <span className="italic font-normal text-muted-foreground">one line at a time.</span>
+           
           </h1>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
